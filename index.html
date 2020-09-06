@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz HTML</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+      <form action="https://formspree.io/mbjzvvpa" method="POST">
+            
+            <label for="name">Imię</label>
+            <input type="text" name="name" id="name" placeholder="Tu wpisz Imię">
+            
+            <br>
+            <label for="lastname">Nazwisko</label> 
+            <input type="text" name="lastname" id="lastname" placeholder="Tu wpisz Nazwisko">
+                 
+            <br>
+            <label for="mail">Email</label>
+            <input type="email" name="email" id="email" placeholder="Tu wpisz email">
+                 
+            <br>
+            <label for="phone">Telefon</label>
+            <input type="tel" name="phone" id="phone" placeholder="Tu wpisz numer telefonu">
+               
+            <br>
+            <label for="city">Wybierz miasto</label>
+            <select name="city" id="city">
+                <option value="Kraków">Kraków</option>
+                <option value="Warszawa">Warszawa</option>
+                <option value="Gdańsk" selected>Gdańsk</option>
+            </select>
+
+            <br>
+            <p>Wybierz płeć</p>
+            <input type="radio" name="gender" value="male" id="male"><label for="male">Mężczyzna</label>
+            <br>
+            <input type="radio" name="gender" value="female"><label for="female">Kobieta</label>
+
+            <br>
+            <label for="message">Wiadomość: </label>
+            <textarea name="massage" placeholder="Tu wpisz wiadomość"></textarea>
+            
+
+            <br>
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+
+            <br>
+            <input type="submit" value="Wyślij maila">
+      </form>
+
+</body>
+</html>
